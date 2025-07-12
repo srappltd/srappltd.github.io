@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deshboard</title>
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <link href='https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css' rel='stylesheet'/>
+    <script src='https://cdn.tailwindcss.com'></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loader.css">
+</head>
+<body class="max-w-[1580px] m-auto dark:bg-slate-950 dark:text-white select-none">
+    <div class="nav w-full h-[9vh] md:h-[10vh] fixed z-50 bg-slate-100 dark:bg-slate-900 lg:flex hidden items-center justify-between px-3 md:px-10">
+        <div class="left"><a href="#" class="font-bold text-lg md:text-2xl">SR Applicatin Limited.</a></div>
+        <div class="center md:flex gap-4 hidden">
+            <a class="text-sm font-medium magnet-target" href="">Home</a>
+            <a class="text-sm font-medium magnet-target" href="">Portfolio</a>
+            <a class="text-sm font-medium magnet-target href="">Projects</a>
+            <a class="text-sm font-medium magnet-target" href="tel:6260396658">Contact Us</a>
+        </div>
+        <div class="right md:flex gap-4 hidden">
+            <a href="https://www.instagram.com/sr_app_ltd/" class="magnet-target"><i class="ri-instagram-fill"></i> <span class="text-sm font-medium">Instagram</span></a>
+            <a href="https://www.facebook.com/profile.php?id=100024819255912" class="magnet-target"><i class="ri-facebook-fill"></i> <span class="text-sm font-medium">Facebook</span></a>
+            <a href="https://github.com/srappltd" class="magnet-target"><i class="ri-github-fill"></i> <span class="text-sm font-medium">Github</span></a>
+        </div>
+    </div>
+    <div class="nav2 w-full h-[11vh] fixed z-40 flex justify-center items-center lg:hidden">
+        <div class="w-[70%] py-2 rounded-full bg-slate-100 dark:bg-slate-900 flex justify-between items-center border-2 border-orange-200 dark:border-slate-700 px-[20px]">
+            <span class="menu-btn text-lg font-medium w-[43px] h-[43px] bg-white dark:bg-slate-900  hover:bg-slate-200 dark:hover:bg-slate-800 rounded-full flex items-center justify-center relative isolation-auto z-10 border-2 border-slate-200 dark:border-slate-700 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-[#F87537] hover:text-white transition-all before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700">
+                <i class="ri-menu-4-line text-2xl transition-all"></i>
+            </span>
+            <span class="font-semibold text-xl">SR App Ltd.</span>
+            <span class="noti-btn text-lg font-medium w-[43px] h-[43px] bg-white dark:bg-slate-900 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-full flex items-center justify-center relative isolation-auto z-10 border-2 border-slate-200 dark:border-slate-700 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-[#F87537] hover:text-white transition-all before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700">
+                <i class="ri-notification-4-fill text-2xl transition-all"></i>
+            </span>
+        </div>
+    </div>
+    <div class="menu-box w-[100%] h-[100vh] left-[-100%] opacity-0 z-50 fixed top-0 transition-all duration-1000">
+        <div class="w-[300px] h-screen bg-white dark:bg-slate-900 relative flex flex-col gap-2 pt-[5vh]">
+            <span class="close-btn text-lg font-medium w-[43px] h-[43px] absolute right-4 top-4 bg-white dark:bg-slate-900 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-full flex items-center justify-center isolation-auto z-10 border-2 border-slate-200 dark:border-slate-700 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-[#F87537] hover:text-white transition-all before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700">
+                <i class="ri-close-line text-2xl transition-all"></i>
+            </span>
+            <h1 class="text-center text-2xl font-medium">Profile</h1>
+            <div class="w-full flex justify-center items-center flex-col text-center mt-5">
+                <img src="./assets/abhay.png" class="w-[100px] h-[100px] border-2 dark:border-slate-500 bg-[#F87537] rounded-full object-cover" alt="">
+                <span class="font-medium uppercase text-xl leading-[1.2] mt-2">Abhay Gautam</span>
+                <a href="#" class="text-sm opacity-[.5]">srappltd@gmail.com</a>
+            </div>
+            <div class="flex flex-col  gap-2 px-3">
+                <a href="/" class="px-5 py-3 font-medium bg-slate-100 dark:bg-slate-950 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-md">Home</a>
+                <a href="" class="px-5 py-3 font-medium bg-slate-100 dark:bg-slate-950 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-md">Resume</a>
+                <a href="https://github.com/srappltd" class="px-5 py-3 font-medium bg-slate-100 dark:bg-slate-950 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-md">Github</a>
+                <a href="https://linkedin.com/srappltd" class="px-5 py-3 font-medium bg-slate-100 dark:bg-slate-950 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-md">Linkedin</a>
+                <a href="https://www.instagram.com/sr_app_ltd/" class="px-5 py-3 font-medium bg-slate-100 dark:bg-slate-950 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-md">Instagram</a>
+                <a href="tel:6260396658" class="px-5 py-3 font-medium bg-slate-100 dark:bg-slate-950 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-md">Contact Us</a>
+                <a href="" class="px-5 py-3 font-medium bg-slate-100 dark:bg-slate-950 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-md">Term & Condition</a>
+                <a href="" class="px-5 py-3 font-medium bg-slate-100 dark:bg-slate-950 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-md">Privacy policy</a>
+            </div>
+        </div>
+    </div>
+    <div id="main" class="max-w-[1580px] m-auto">
+        <div class="page-1 w-full h-[100vh] px-[2vh] md:px-[7vh]">
+            <div class="w-full h-[2vh] md:hidden"></div>
+            <div class="flex w-full h-full flex-col-reverse md:flex-row">
+                <div class="left w-full md:w-1/2 h-[50%] md:h-screen flex justify-center relative top-[-20px] items-center md:items-start text-center md:text-start flex-col">
+                    <h1 class="text-4xl md:text-7xl font-bold">I'M <span class="text-[#F87537]">DEVELOPER</span> ABHAY GAUTAM</h1>
+                    <p class="font-medium leading-[1.2] w-[90%] text-slate-500 mt-3 md:mt-7">Greetings, fellow digital explorers! I am Wilkerson, a passionate and innovative developer dedicated to crafting immersive digital experiences. Welcome to my online abode</p>
+                    <div class="flex gap-3 md:gap-10 mt-5 md:mt-10 whitespace-nowrap flex-wrap justify-center md:justify-start">
+                        <a href="https://chat.whatsapp.com/BkOqv8zHMqt6HW6qeBDIVj" class="bg-[#F87537] py-[10px] font-medium text-white px-6 rounded-full magnet-target">Hire Me</a>
+                        <a href="#" class="bg-[#F87537] py-[10px] font-medium text-white px-6 rounded-full magnet-target">Play Video</a>
+                        <a href="https://firebasestorage.googleapis.com/v0/b/b24--project.appspot.com/o/resume%2FPink%20Simple%20Profile%20Resume_20240116_140425_0000.pdf?alt=media&token=be8cc64d-4806-4ec1-90ce-9c99ca7626e1" class="bg-[#F87537] py-[10px] font-medium text-white px-6 rounded-full magnet-target">Download Resume <i class="ri-send-plane-fill"></i></a>
+                    </div>
+                </div>
+                <div class="right w-full md:w-1/2 h-[50%] md:h-screen relative flex items-center justify-center">
+                    <!-- <svg class="absolute w-[450px] md:w-[610px] top-[60%] left-[50%] translate-x-[-50%] translate-y-[-50%]" height="100%" id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">                    <defs>                         <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">                            <stop id="stop1" stop-color="rgba(248, 117, 55, 1)" offset="0%"></stop><stop id="stop2" stop-color="#F87537" offset="100%"></stop>                        </linearGradient>                    </defs>                <path fill="#F87537" d="M24.7,-27C30.5,-18.9,32.5,-9.5,33,0.5C33.5,10.4,32.4,20.8,26.6,24.3C20.8,27.9,10.4,24.5,1.5,23C-7.5,21.5,-15,22,-21.8,18.5C-28.7,15,-35,7.5,-35.4,-0.4C-35.8,-8.3,-30.3,-16.6,-23.4,-24.7C-16.6,-32.8,-8.3,-40.7,0.6,-41.3C9.5,-41.9,18.9,-35.1,24.7,-27Z" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;"></path>              </svg>
+                    <svg id="sw-js-blob-svg" width="25%" class="absolute top-[20%] left-[20%] z-40 translate-x-[-50%] translate-y-[-50%]" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">                    <defs>                         <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">                            <stop id="stop1" stop-color="rgba(248, 117, 55, 1)" offset="0%"></stop>                            <stop id="stop2" stop-color="rgba(251, 168, 31, 1)" offset="100%"></stop>                        </linearGradient>                    </defs>                <path fill="url(#sw-gradient)" d="M34.6,-10.2C37.9,-1.1,28.8,13.1,19.3,18C9.8,22.8,-0.2,18.5,-7.5,12.6C-14.7,6.8,-19.2,-0.4,-17.5,-7.3C-15.8,-14.2,-7.9,-20.8,3.9,-22C15.6,-23.3,31.3,-19.3,34.6,-10.2Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;"></path>              </svg>
+                    <svg id="sw-js-blob-svg" width="25%" class="absolute bottom-[-5%] right-[10%] z-40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">                    <defs>                         <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">                            <stop id="stop1" stop-color="rgba(248, 117, 55, 1)" offset="0%"></stop>                            <stop id="stop2" stop-color="rgba(251, 168, 31, 1)" offset="100%"></stop>                        </linearGradient>                    </defs>                <path fill="url(#sw-gradient)" d="M19.2,-1.4C22.7,4.4,21.7,16.5,15.7,20.6C9.7,24.7,-1.3,20.9,-7.7,15.2C-14.1,9.5,-15.7,1.9,-13.7,-2C-11.6,-5.9,-5.8,-6.1,1,-6.4C7.9,-6.7,15.8,-7.2,19.2,-1.4Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;"></path>              </svg>
+                    <div class="relative flex items-center justify-center top-5 left-2">
+                        <div class="profile w-[200px] h-[180px] md:w-[250px] md:h-[250px] absolute overflow-hidden">
+                            <img class=" w-[100%]" src="./assets/abhay.png" alt="">
+                        </div>
+                    </div> -->
+                    <img src="./assets/top.png" class="back w-[700px] md:w-[80%] object-cover relative top-8 left-[-30px] dark:hidden" alt="">
+                    <img src="./assets/top (1).png" class="w-[700px] md:w-[80%] object-cover relative top-8 left-[-30px] hidden dark:block" alt="">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="page-2 w-full relative pb-10">
+            <div class="w-full h-[8vh] md:h-[10vh] bg-slate-100 dark:bg-slate-900 flex items-center uppercase text-3xl font-medium px-4 overflow-hidden">
+                <div class="brand w-full flex justify-between gap-6 uppercase text-2xl md:text-3xl font-medium flex-shrink-0 relative px-4 md:px-0">
+                    <span>Adobe</span>
+                    <span>Ibm</span>
+                    <span>Microsoft</span>
+                    <span class="hidden lg:block">Google</span>
+                    <span class="hidden lg:block">Adobe</span>
+                    <span class="hidden lg:block">Ibm</span>
+                    <span class="hidden lg:block">Microsoft</span>
+                    <span class="hidden lg:block">Google</span>
+                </div>
+                <div class="brand w-full flex justify-between  gap-6 uppercase text-2xl md:text-3xl font-medium flex-shrink-0 relative px-4 md:px-0">
+                    <span>Adobe</span>
+                    <span>Ibm</span>
+                    <span>Microsoft</span>
+                    <span class="hidden lg:block">Google</span>
+                    <span class="hidden lg:block">Adobe</span>
+                    <span class="hidden lg:block">Ibm</span>
+                    <span class="hidden lg:block">Microsoft</span>
+                    <span class="hidden lg:block">Google</span>
+                </div>
+                
+                
+            </div>
+            <div class="w-full flex items-center justify-center flex-wrap gap-4 sm:gap-7 mt-14 relative pt-10 px-5 md:px-0">
+                <div class="card w-[100%] sm:w-[300px] h-[330px] hover:bg-slate-100 dark:hover:bg-slate-800 transition-all bg-slate-100 dark:bg-slate-900 rounded-lg p-4">
+                    <div class="img w-[120px] h-[120px] sm:w-[80px] sm:h-[80px] object-cover">
+                        <img class="object-cover" src="https://krify.co/wp-content/uploads/2015/03/UI-Design-vs-UX-Design-Who-is-ruling-the-ground.png" alt="">
+                    </div>
+                    <div class="mt-5 sm:mt-16">
+                        <h1 class="text-2xl font-medium">UI/UX Design</h1>
+                        <p class="mt-4 leading-[1.3] text-base sm:text-sm text-slate-700 dark:text-slate-400 font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, odit, modi labore facilis dolorem.</p>
+                    </div>
+                </div>
+                <div class="card w-[100%] sm:w-[300px] h-[330px] hover:bg-slate-100 dark:hover:bg-slate-800 transition-all bg-slate-100 dark:bg-slate-900 rounded-lg p-4">
+                    <div class="img w-[120px] h-[120px] sm:w-[80px] sm:h-[80px]">
+                        <img src="https://cdn.icon-icons.com/icons2/3237/PNG/512/brand_application_play_gaming_roblox_social_media_logo_icon_197248.png" alt="">
+                    </div>
+                    <div class="mt-5 sm:mt-16">
+                        <h1 class="text-2xl font-medium">Social Media</h1>
+                        <p class="mt-4 leading-[1.3] text-base sm:text-sm text-slate-700 dark:text-slate-400 font-normal line-clamp-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, odit, modi labore facilis dolorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim deleniti labore nobis. Quia suscipit, consectetur, cumque ipsam nemo perferendis, nesciunt aliquid doloremque distinctio eligendi ullam commodi aliquam. Veniam, neque obcaecati!.</p>
+                    </div>
+                </div>
+                <div class="card w-[100%] sm:w-[300px] h-[330px] hover:bg-slate-100 dark:hover:bg-slate-800 transition-all bg-slate-100 dark:bg-slate-900 rounded-lg p-4">
+                    <div class="img w-[130px] sm:w-[80px]">
+                        <img src="https://cdn.freebiesupply.com/logos/large/2x/design-graphics-logo-svg-vector.svg" alt="">
+                    </div>
+                    <div class="mt-5 sm:mt-16">
+                        <h1 class="text-2xl font-medium">Graphic Design</h1>
+                        <p class="mt-4 leading-[1.3] text-base sm:text-sm text-slate-700 dark:text-slate-400 font-normal line-clamp-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, odit, modi labore facilis dolorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim deleniti labore nobis. Quia suscipit, consectetur, cumque ipsam nemo perferendis, nesciunt aliquid doloremque distinctio eligendi ullam commodi aliquam. Veniam, neque obcaecati!.</p>
+                    </div>
+                </div>
+                <div class="rotate-[0deg] md:rotate-[270deg] font-bold uppercase text-4xl sm:text-5xl absolute top-[0%] md:top-[50%] md:right-0 translate-y-[-50%] opacity-25"><h1>services</h1></div>
+            </div>
+        </div>
+        <div class="page-3 w-full px-[2vh] sm:px-[10vh]">
+            <h1 class="text-center text-4xl sm:text-5xl font-bold mt-7">My Skills</h1>
+            <div class="flex justify-center flex-wrap mt-4">
+                <div class="card w-[50%] h-[50%] sm:w-[300px] sm:h-[300px] p-2 sm:p-4">
+                    <div class="p-5 w-full h-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-all bg-slate-100 dark:bg-slate-900 cursor-pointer rounded-xl sm:rounded-2xl flex items-center flex-col gap-4 justify-center">
+                        <img class="w-[70px]" src="./assets/github-142-svgrepo-com.svg" alt="">
+                        <h1 class="font-medium text-xl sm:text-2xl">Github</h1>
+                    </div>
+                </div>
+                <di2 class="card w-[50%] h-[50%] sm:w-[300px] sm:h-[300px] p-2 sm:p-4">
+                    <div class="p-5 w-full h-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-all bg-slate-100 dark:bg-slate-900 cursor-pointer rounded-xl sm:rounded-2xl flex items-center flex-col gap-4 justify-center">
+                        <img class="w-[70px]" src="./assets/git-svgrepo-com.svg" alt="">   
+                        <h1 class="font-medium text-2xl">Git</h1>
+                    </div>
+                </di2>
+                <di2 class="card w-[50%] h-[50%] sm:w-[300px] sm:h-[300px] p-2 sm:p-4">
+                    <div class="p-5 w-full h-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-all bg-slate-100 dark:bg-slate-900 cursor-pointer rounded-xl sm:rounded-2xl flex items-center flex-col gap-4 justify-center">
+                        <img class="w-[70px]" src="./assets/flutter-svgrepo-com.svg" alt="">
+                        <h1 class="font-medium text-xl sm:text-2xl">Flutter</h1>
+                    </div>
+                </di2>
+                <di2 class="card w-[50%] h-[50%] sm:w-[300px] sm:h-[300px] p-2 sm:p-4">
+                    <div class="p-5 w-full h-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-all bg-slate-100 dark:bg-slate-900 cursor-pointer rounded-xl sm:rounded-2xl flex items-center flex-col gap-4 justify-center">
+                        <img class="w-[70px]" src="./assets/aws-svgrepo-com.svg" alt="">
+                        <h1 class="font-medium text-xl sm:text-2xl">AWS</h1>
+                    </div>
+                </di2>
+                <di2 class="card w-[50%] h-[50%] sm:w-[300px] sm:h-[300px] p-2 sm:p-4">
+                    <div class="p-5 w-full h-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-all bg-slate-100 dark:bg-slate-900 cursor-pointer rounded-xl sm:rounded-2xl flex items-center flex-col gap-4 justify-center">
+                        <img class="w-[70px]" src="./assets/css3-svgrepo-com.svg" alt="">
+                        <h1 class="font-medium text-xl sm:text-2xl">CSS</h1>
+                    </div>
+                </di2>
+                <di2 class="card w-[50%] h-[50%] sm:w-[300px] sm:h-[300px] p-2 sm:p-4">
+                    <div class="p-5 w-full h-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-all bg-slate-100 dark:bg-slate-900 cursor-pointer rounded-xl sm:rounded-2xl flex items-center flex-col gap-4 justify-center">
+                        <img class="w-[70px]" src="./assets/html-5-svgrepo-com.svg" alt="">
+                        <h1 class="font-medium text-xl sm:text-2xl">Html</h1>
+                    </div>
+                </di2>
+                <di2 class="card w-[50%] h-[50%] sm:w-[300px] sm:h-[300px] p-2 sm:p-4">
+                    <div class="p-5 w-full h-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-all bg-slate-100 dark:bg-slate-900 cursor-pointer rounded-xl sm:rounded-2xl flex items-center flex-col gap-4 justify-center">
+                        <img class="w-[70px]" src="./assets/mongodb-svgrepo-com (1).svg" alt="">
+                        <h1 class="font-medium text-xl sm:text-2xl">Mongodb</h1>
+                    </div>
+                </di2>
+                <di2 class="card w-[50%] h-[50%] sm:w-[300px] sm:h-[300px] p-2 sm:p-4">
+                    <div class="p-5 w-full h-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-all bg-slate-100 dark:bg-slate-900 cursor-pointer rounded-xl sm:rounded-2xl flex items-center flex-col gap-4 justify-center">
+                        <img class="w-[70px]" src="./assets/js-official-svgrepo-com.svg" alt="">
+                        <h1 class="font-medium text-xl sm:text-2xl">JS</h1>
+                    </div>
+                </di2>
+                <di2 class="card w-[50%] h-[50%] sm:w-[300px] sm:h-[300px] p-2 sm:p-4">
+                    <div class="p-5 w-full h-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-all bg-slate-100 dark:bg-slate-900 cursor-pointer rounded-xl sm:rounded-2xl flex items-center flex-col gap-4 justify-center">
+                        <img class="w-[70px]" src="./assets/java-svgrepo-com.svg" alt="">
+                        <h1 class="font-medium text-xl sm:text-2xl">Java</h1>
+                    </div>
+                </di2>
+                <di2 class="card w-[50%] h-[50%] sm:w-[300px] sm:h-[300px] p-2 sm:p-4">
+                    <div class="p-5 w-full h-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-all bg-slate-100 dark:bg-slate-900 cursor-pointer rounded-xl sm:rounded-2xl flex items-center flex-col gap-4 justify-center">
+                        <img class="w-[70px]" src="./assets/react-svgrepo-com.svg" alt="">
+                        <h1 class="font-medium text-xl sm:text-2xl">React.js</h1>
+                    </div>
+                </di2>
+                <di2 class="card w-[50%] h-[50%] sm:w-[300px] sm:h-[300px] p-2 sm:p-4">
+                    <div class="p-5 w-full h-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-all bg-slate-100 dark:bg-slate-900 cursor-pointer rounded-xl sm:rounded-2xl flex items-center flex-col gap-4 justify-center">
+                        <img class="w-[70px]" src="./assets/nextjs-fill-svgrepo-com.svg" alt="">
+                        <h1 class="font-medium text-xl sm:text-2xl">Next.js</h1>
+                    </div>
+                </di2>
+                <di2 class="card w-[50%] h-[50%] sm:w-[300px] sm:h-[300px] p-2 sm:p-4">
+                    <div class="p-5 w-full h-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-all bg-slate-100 dark:bg-slate-900 cursor-pointer rounded-xl sm:rounded-2xl flex items-center flex-col gap-4 justify-center">
+                        <img class="w-[70px]" src="./assets/database-svgrepo-com.svg" alt="">
+                        <h1 class="font-medium text-xl sm:text-2xl">MySql</h1>
+                    </div>
+                </di2>
+            </div>
+        </div>
+        <div class="page-4 w-full px-[2vh] sm:px-[20vh] mt-7 pb-7 select-none">
+            <h1 class="text-center text-4xl sm:text-5xl font-bold mt-7">My Projects</h1>
+            <div class="website w-full mt-4">
+                <h2 class=" text-xl text-orange-600 text-center sm:text-left font-medium">Websites</h2>
+                <div class="w-full relative">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper mt-2">
+                        <div class="swiper-wrapper w-full">
+                            <div class="card swiper-slide w-[100%] cursor-pointer bg-slate-100 dark:bg-slate-900 dark:border-slate-800 p-3 md:p-4 rounded-[10px] sm:rounded-[20px] h-[280px] sm:h-[320px] hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">
+                                <img src="./upload/instagram.png" class="w-full h-[200px] sm:h-[240px] object-cover bg-black rounded-[10px] sm:rounded-[20px]" alt="">
+                                <div class="w-full">
+                                    <h1 class="line-clamp-1 leading-[1.3] mt-1 font-semibold text-lg font-sans">Instagram Project</h1>
+                                    <a href="#" class="text-sm font-medium underline text-orange-700 mix-blend-difference">Explore This</a>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide w-[100%] cursor-pointer bg-slate-100 dark:bg-slate-900 dark:border-slate-800 p-3 md:p-4 rounded-[10px] sm:rounded-[20px] h-[280px] sm:h-[320px] hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">
+                                <img src="./upload/google drive.png" class="w-full h-[200px] sm:h-[240px] object-cover bg-black rounded-[10px] sm:rounded-[20px]" alt="">
+                                <div class="w-full">
+                                    <h1 class="line-clamp-1 leading-[1.3] mt-1 font-semibold text-lg font-sans">Google Drive Project</h1>
+                                    <a href="#" class="text-sm font-medium underline text-orange-700 mix-blend-difference">Explore This</a>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide w-[100%] cursor-pointer bg-slate-100 dark:bg-slate-900 dark:border-slate-800 p-3 md:p-4 rounded-[10px] sm:rounded-[20px] h-[280px] sm:h-[320px] hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">
+                                <img src="./upload/Pinterest.png" class="w-full h-[200px] sm:h-[240px] object-cover bg-black rounded-[10px] sm:rounded-[20px]" alt="">
+                                <div class="w-full">
+                                    <h1 class="line-clamp-1 leading-[1.3] mt-1 font-semibold text-lg font-sans">Pinterest Project</h1>
+                                    <a href="#" class="text-sm font-medium underline text-orange-700 mix-blend-difference">Explore This</a>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide w-[100%] cursor-pointer bg-slate-100 dark:bg-slate-900 dark:border-slate-800 p-3 md:p-4 rounded-[10px] sm:rounded-[20px] h-[280px] sm:h-[320px] hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">
+                                <img src="./upload/Sheryians Home.png" class="w-full h-[200px] sm:h-[240px] object-cover bg-black rounded-[10px] sm:rounded-[20px]" alt="">
+                                <div class="w-full">
+                                    <h1 class="line-clamp-1 leading-[1.3] mt-1 font-semibold text-lg font-sans">Coaching app Project</h1>
+                                    <a href="#" class="text-sm font-medium underline text-orange-700 mix-blend-difference">Explore This</a>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide w-[100%] cursor-pointer bg-slate-100 dark:bg-slate-900 dark:border-slate-800 p-3 md:p-4 rounded-[10px] sm:rounded-[20px] h-[280px] sm:h-[320px] hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">
+                                <img src="./upload/vs code.png" class="w-full h-[200px] sm:h-[240px] object-cover bg-black rounded-[10px] sm:rounded-[20px]" alt="">
+                                <div class="w-full">
+                                    <h1 class="line-clamp-1 leading-[1.3] mt-1 font-semibold text-lg font-sans">VS Code clone Project</h1>
+                                    <a href="#" class="text-sm font-medium underline text-orange-700 mix-blend-difference">Explore This</a>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide w-[100%] cursor-pointer bg-slate-100 dark:bg-slate-900 dark:border-slate-800 p-3 md:p-4 rounded-[10px] sm:rounded-[20px] h-[280px] sm:h-[320px] hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">
+                                <img src="./upload/spain.png" class="w-full h-[200px] sm:h-[240px] object-cover bg-black rounded-[10px] sm:rounded-[20px]" alt="">
+                                <div class="w-full">
+                                    <h1 class="line-clamp-1 leading-[1.3] mt-1 font-semibold text-lg font-sans">Spain website clone Project</h1>
+                                    <a href="#" class="text-sm font-medium underline text-orange-700 mix-blend-difference">Explore This</a>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide w-[100%] cursor-pointer bg-slate-100 dark:bg-slate-900 dark:border-slate-800 p-3 md:p-4 rounded-[10px] sm:rounded-[20px] h-[280px] sm:h-[320px] hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">
+                                <img src="./upload/Wednesday.png" class="w-full h-[200px] sm:h-[240px] object-cover bg-black rounded-[10px] sm:rounded-[20px]" alt="">
+                                <div class="w-full">
+                                    <h1 class="line-clamp-1 leading-[1.3] mt-1 font-semibold text-lg font-sans">Wednesday clone Project</h1>
+                                    <a href="#" class="text-sm font-medium underline text-orange-700 mix-blend-difference">Explore This</a>
+                                </div>
+                            </div>
+                             <div class="card swiper-slide w-[100%] cursor-pointer bg-slate-100 dark:bg-slate-900 dark:border-slate-800 p-3 md:p-4 rounded-[10px] sm:rounded-[20px] h-[280px] sm:h-[320px] hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">
+                                <img src="./upload/yololo.png" class="w-full h-[200px] sm:h-[240px] object-cover bg-black rounded-[10px] sm:rounded-[20px]" alt="">
+                                <div class="w-full">
+                                    <h1 class="line-clamp-1 leading-[1.3] mt-1 font-semibold text-lg font-sans">yololo clone Project</h1>
+                                    <a href="#" class="text-sm font-medium underline text-orange-700 mix-blend-difference">Explore This</a>
+                                </div>
+                            </div>
+                             <div class="card swiper-slide w-[100%] cursor-pointer bg-slate-100 dark:bg-slate-900 dark:border-slate-800 p-3 md:p-4 rounded-[10px] sm:rounded-[20px] h-[280px] sm:h-[320px] hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">
+                                <img src="./upload/Youtube - Deshboard.png" class="w-full h-[200px] sm:h-[240px] object-cover bg-black rounded-[10px] sm:rounded-[20px]" alt="">
+                                <div class="w-full">
+                                    <h1 class="line-clamp-1 leading-[1.3] mt-1 font-semibold text-lg font-sans">Youtube clone Project</h1>
+                                    <a href="#" class="text-sm font-medium underline text-orange-700 mix-blend-difference">Explore This</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="swiper-button-next text-2xl absolute right-[-75px] border-2 w-[35px] h-[35px] border-orange-800 rounded-full"><i class="ri-arrow-right-line text-orange-600"></i></div>
+                    <div class="swiper-button-prev text-2xl absolute left-[-75px] border-2 w-[35px] h-[35px] border-orange-800 rounded-full"><i class="ri-arrow-left-line text-orange-600"></i></div>
+                </div>
+
+            </div>
+            <div class="application w-full mt-4">
+                <h2 class=" text-xl text-orange-600 text-center sm:text-left font-medium">Mobile</h2>
+                <div class="w-full relative">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper mt-2">
+                        <div class="swiper-wrapper w-full">
+                            <div class="card swiper-slide w-[100%] cursor-pointer bg-slate-100 dark:bg-slate-900 dark:border-slate-800 p-3 md:p-4 rounded-[10px] sm:rounded-[20px] h-[280px] sm:h-[320px] hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">
+                                <img src="./upload/instagram.png" class="w-full h-[200px] sm:h-[240px] object-cover bg-black rounded-[10px] sm:rounded-[20px]" alt="">
+                                <div class="w-full">
+                                    <h1 class="line-clamp-1 leading-[1.3] mt-1 font-semibold text-lg font-sans">Instagram Project</h1>
+                                    <a href="#" class="text-sm font-medium underline text-orange-700 mix-blend-difference">Explore This</a>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide w-[100%] cursor-pointer bg-slate-100 dark:bg-slate-900 dark:border-slate-800 p-3 md:p-4 rounded-[10px] sm:rounded-[20px] h-[280px] sm:h-[320px] hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">
+                                <img src="./upload/google drive.png" class="w-full h-[200px] sm:h-[240px] object-cover bg-black rounded-[10px] sm:rounded-[20px]" alt="">
+                                <div class="w-full">
+                                    <h1 class="line-clamp-1 leading-[1.3] mt-1 font-semibold text-lg font-sans">Google Drive Project</h1>
+                                    <a href="#" class="text-sm font-medium underline text-orange-700 mix-blend-difference">Explore This</a>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide w-[100%] cursor-pointer bg-slate-100 dark:bg-slate-900 dark:border-slate-800 p-3 md:p-4 rounded-[10px] sm:rounded-[20px] h-[280px] sm:h-[320px] hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">
+                                <img src="./upload/Pinterest.png" class="w-full h-[200px] sm:h-[240px] object-cover bg-black rounded-[10px] sm:rounded-[20px]" alt="">
+                                <div class="w-full">
+                                    <h1 class="line-clamp-1 leading-[1.3] mt-1 font-semibold text-lg font-sans">Pinterest Project</h1>
+                                    <a href="#" class="text-sm font-medium underline text-orange-700 mix-blend-difference">Explore This</a>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide w-[100%] cursor-pointer bg-slate-100 dark:bg-slate-900 dark:border-slate-800 p-3 md:p-4 rounded-[10px] sm:rounded-[20px] h-[280px] sm:h-[320px] hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">
+                                <img src="./upload/Sheryians Home.png" class="w-full h-[200px] sm:h-[240px] object-cover bg-black rounded-[10px] sm:rounded-[20px]" alt="">
+                                <div class="w-full">
+                                    <h1 class="line-clamp-1 leading-[1.3] mt-1 font-semibold text-lg font-sans">Coaching app Project</h1>
+                                    <a href="#" class="text-sm font-medium underline text-orange-700 mix-blend-difference">Explore This</a>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide w-[100%] cursor-pointer bg-slate-100 dark:bg-slate-900 dark:border-slate-800 p-3 md:p-4 rounded-[10px] sm:rounded-[20px] h-[280px] sm:h-[320px] hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">
+                                <img src="./upload/vs code.png" class="w-full h-[200px] sm:h-[240px] object-cover bg-black rounded-[10px] sm:rounded-[20px]" alt="">
+                                <div class="w-full">
+                                    <h1 class="line-clamp-1 leading-[1.3] mt-1 font-semibold text-lg font-sans">VS Code clone Project</h1>
+                                    <a href="#" class="text-sm font-medium underline text-orange-700 mix-blend-difference">Explore This</a>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide w-[100%] cursor-pointer bg-slate-100 dark:bg-slate-900 dark:border-slate-800 p-3 md:p-4 rounded-[10px] sm:rounded-[20px] h-[280px] sm:h-[320px] hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">
+                                <img src="./upload/spain.png" class="w-full h-[200px] sm:h-[240px] object-cover bg-black rounded-[10px] sm:rounded-[20px]" alt="">
+                                <div class="w-full">
+                                    <h1 class="line-clamp-1 leading-[1.3] mt-1 font-semibold text-lg font-sans">Spain website clone Project</h1>
+                                    <a href="#" class="text-sm font-medium underline text-orange-700 mix-blend-difference">Explore This</a>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide w-[100%] cursor-pointer bg-slate-100 dark:bg-slate-900 dark:border-slate-800 p-3 md:p-4 rounded-[10px] sm:rounded-[20px] h-[280px] sm:h-[320px] hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">
+                                <img src="./upload/Wednesday.png" class="w-full h-[200px] sm:h-[240px] object-cover bg-black rounded-[10px] sm:rounded-[20px]" alt="">
+                                <div class="w-full">
+                                    <h1 class="line-clamp-1 leading-[1.3] mt-1 font-semibold text-lg font-sans">Wednesday clone Project</h1>
+                                    <a href="#" class="text-sm font-medium underline text-orange-700 mix-blend-difference">Explore This</a>
+                                </div>
+                            </div>
+                             <div class="card swiper-slide w-[100%] cursor-pointer bg-slate-100 dark:bg-slate-900 dark:border-slate-800 p-3 md:p-4 rounded-[10px] sm:rounded-[20px] h-[280px] sm:h-[320px] hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">
+                                <img src="./upload/yololo.png" class="w-full h-[200px] sm:h-[240px] object-cover bg-black rounded-[10px] sm:rounded-[20px]" alt="">
+                                <div class="w-full">
+                                    <h1 class="line-clamp-1 leading-[1.3] mt-1 font-semibold text-lg font-sans">yololo clone Project</h1>
+                                    <a href="#" class="text-sm font-medium underline text-orange-700 mix-blend-difference">Explore This</a>
+                                </div>
+                            </div>
+                             <div class="card swiper-slide w-[100%] cursor-pointer bg-slate-100 dark:bg-slate-900 dark:border-slate-800 p-3 md:p-4 rounded-[10px] sm:rounded-[20px] h-[280px] sm:h-[320px] hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">
+                                <img src="./upload/Youtube - Deshboard.png" class="w-full h-[200px] sm:h-[240px] object-cover bg-black rounded-[10px] sm:rounded-[20px]" alt="">
+                                <div class="w-full">
+                                    <h1 class="line-clamp-1 leading-[1.3] mt-1 font-semibold text-lg font-sans">Youtube clone Project</h1>
+                                    <a href="#" class="text-sm font-medium underline text-orange-700 mix-blend-difference">Explore This</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="swiper-button-next text-2xl absolute right-[-75px] border-2 w-[35px] h-[35px] border-orange-800 rounded-full"><i class="ri-arrow-right-line text-orange-600"></i></div>
+                    <div class="swiper-button-prev text-2xl absolute left-[-75px] border-2 w-[35px] h-[35px] border-orange-800 rounded-full"><i class="ri-arrow-left-line text-orange-600"></i></div>
+                </div>
+
+            </div>
+            
+            
+            
+            
+        </div>
+        <div class="blogs w-full px-[1.5vh] sm:px-[20vh]">
+            <h1 class="text-center text-4xl sm:text-5xl font-bold mt-7">Latest Blog Posts</h1>
+            <div class="w-full flex flex-wrap">
+                <div class=" card w-[100%] sm:w-[33%] p-2 sm:p-4"> 
+                    <div class="w-full h-[285px] bg-slate-100 dark:bg-slate-900 sm:p-5 sm:rounded-2xl p-3 rounded-lg"> 
+                        <img src="https://ninjasites.com/images/blog/webpage-creation.png?v=1684153977260389102" class="w-full h-[185px] rounded-2xl border dark:border-slate-700" alt="">
+                        <p class="text-sm sm:text-xs font-medium mt-[3px] text-[#F87537]">12 jan 2024</p>
+                        <h1 class="leading-[1.2] text-lg font-semibold line-clamp-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, distinctio!</h1>
+                    </div>
+                </div>
+                <div class="card w-[100%] sm:w-[33%] p-2 sm:p-4"> 
+                    <div class="w-full h-[285px] bg-slate-100 dark:bg-slate-900 sm:p-5 sm:rounded-2xl p-3 rounded-lg"> 
+                        <img id="back" src="https://ninjasites.com/images/blog/webpage-creation.png?v=1684153977260389102" class="w-full h-[185px] rounded-2xl border dark:border-slate-700" alt="">
+                        <p class="text-sm sm:text-xs font-medium mt-[3px] text-[#F87537]">12 jan 2024</p>
+                        <h1 class="leading-[1.2] text-lg font-semibold line-clamp-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, distinctio!</h1>
+                    </div>
+                </div>
+                <div class="card w-[100%] sm:w-[33%] p-2 sm:p-4"> 
+                    <div class="w-full h-[285px] bg-slate-100 dark:bg-slate-900 sm:p-5 sm:rounded-2xl p-3 rounded-lg"> 
+                        <img src="https://ninjasites.com/images/blog/webpage-creation.png?v=1684153977260389102" class="w-full h-[185px] rounded-2xl border dark:border-slate-700" alt="">
+                        <p class="text-sm sm:text-xs font-medium mt-[3px] text-[#F87537]">12 jan 2024</p>
+                        <h1 class="leading-[1.2] text-lg font-semibold line-clamp-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, distinctio!</h1>
+                    </div>
+                </div>
+                
+                
+            </div>
+
+        </div>
+        <div class="card page-5 mt-6 pb-4">
+            <h1 class="text-center text-4xl sm:text-5xl font-bold mt-7">Contact</h1>
+            <p class="text-sm text-center font-medium text-slate-500">I'm currently available for freelance work</p>
+            <div class="w-full flex flex-col items-center mt-[40px] px-[2vh]">
+                <button class="py-2 px-6 rounded-tl-2xl rounded-br-2xl relative rounded-md bg-white dark:bg-slate-950 isolation-auto z-10 border-2 border-slate-200
+                before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-[#F87537] hover:text-white transition-all before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700">Send Me A Message</button>
+                <div class="w-[100%] sm:w-[60%] mt-5">
+                    <div class="flex flex-col sm:flex-row gap-[20px] sm:gap-[100px] w-full">
+                        <div class="flex flex-col w-full sm:w-1/2">
+                            <label for="">Your name *</label>
+                            <input type="text" placeholder="Enter your name" class="border-b-2 dark:bg-slate-950 dark:border-slate-700 outline-none py-2">
+                        </div>
+                        <div class="flex flex-col w-full sm:w-1/2">
+                            <label for="">Your email *</label>
+                            <input type="text" placeholder="Enter your email" class="border-b-2 dark:bg-slate-950 dark:border-slate-700 py-2 outline-none">
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-full mt-4">
+                        <label for="">Your message *</label>
+                        <textarea name="" id="" class="border-b-2 dark:bg-slate-950 dark:border-slate-700 py-2 min-h-[50px] resize-y outline-none" placeholder="Enter your message"></textarea>
+                    </div>
+                    <div class="flex justify-center w-full mt-4">
+                        <button class="py-2 px-6  relative rounded-full bg-[#F87537] text-white isolation-auto z-10 border-2 border-slate-200
+                before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-white before:dark:bg-slate-950 hover:text-black hover:dark:text-white transition-all before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700">Send Message <i class="ri-send-plane-fill"></i></button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class=" footer w-full px-5 sm:px-10 h-[7vh] border-t dark:border-slate-700 flex justify-center sm:justify-between items-center mt-7 whitespace-nowrap">
+            <div><a href="#" class="text-sm font-medium hidden sm:block">©️ 2023 srappltd. All right reserved</a></div>
+            <div class="sm:flex center gap-4 hidden">
+                <a href="#" class="text-sm font-medium">Privacy Policy</a>
+                <a href="#" class="text-sm font-medium">Terms & Conditions</a>
+            </div>
+            <div class="sm:flex center gap-4 hidden">
+                <a href="#" class="text-lg font-medium w-[34px] h-[34px] bg-slate-100 dark:bg-slate-900 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-full flex items-center justify-center relative isolation-auto z-10 border-2 border-slate-200 dark:border-slate-700 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-[#F87537] hover:text-white transition-all before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700"><i class="ri-instagram-fill"></i></a>
+                <a href="#" class="text-lg font-medium w-[34px] h-[34px] bg-slate-100 dark:bg-slate-900 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-full flex items-center justify-center relative isolation-auto z-10 border-2 border-slate-200 dark:border-slate-700 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-[#F87537] hover:text-white transition-all before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700"><i class="ri-github-fill"></i></a>
+                <a href="#" class="text-lg font-medium w-[34px] h-[34px] bg-slate-100 dark:bg-slate-900 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-full flex items-center justify-center relative isolation-auto z-10 border-2 border-slate-200 dark:border-slate-700 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-[#F87537] hover:text-white transition-all before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700"><i class="ri-discord-fill"></i></a>
+            </div>
+            <div><a href="#" class="text-lg font-semibold sm:text-sm sm:font-medium">Design By <span class="underline text-[#F87537] uppercase">abhay gautam</span></a></div>
+        </div>
+    </div>
+    <!-- <div class="conext w-[300px] h-[400px] bg-red-700 absolute hidden z-10 top-1"></div> -->
+    <!-- <div class="mouse w-[30px] h-[30px] bg-white rounded-full pointer-events-none shadow-sm mix-blend-difference shadow-white absolute z-50 top-14 left-6"></div> -->
+    <!-- Swiper JS -->
+    <!-- <div id="loader" class="loader w-full h-full fixed top-0 left-0 bg-slate-950 z-50 flex items-center justify-center">
+            <svg class="pl" width="240" height="240" viewBox="0 0 240 240">
+                <circle class="pl__ring pl__ring--a" cx="120" cy="120" r="105" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 660" stroke-dashoffset="-330" stroke-linecap="round"></circle>
+                <circle class="pl__ring pl__ring--b" cx="120" cy="120" r="35" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 220" stroke-dashoffset="-110" stroke-linecap="round"></circle>
+                <circle class="pl__ring pl__ring--c" cx="85" cy="120" r="70" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round"></circle>
+                <circle class="pl__ring pl__ring--d" cx="155" cy="120" r="70" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round"></circle>
+            </svg>
+    </div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+    //     document.onreadystatechange = function(){
+    //         setTimeout(()=>{
+    //             document.querySelector("#loader").classList.replace("flex","hidden");
+    //         },1500)
+    //         }
+    //         document.onload = ()=>{
+    //     }
+    // //    document.addEventListener("DOMContentLoaded",(e)=>{
+    // //    })
+    </script>
+<script>
+        const conext = document.querySelector(".conext")
+        let mouse = document.querySelector(".mouse")
+        // document.addEventListener("contextmenu",(e)=>{
+        //     e.preventDefault()
+        //     conext.classList.replace("hidden","flex")
+        //     conext.style.left = e.pageX+"px"
+        //     conext.style.top = e.pageY+"px"
+        // })
+        document.querySelector("#main").addEventListener("click",()=>{
+            // conext.classList.replace("flex","hidden")
+        })
+
+        // document.addEventListener("mousemove",(e)=>{
+        //     let x =  mouse.offsetWidth;
+        //     let y =  mouse.offsetHeight;
+        //     console.log({X:e.pageX,Y:e.pageY})
+        //     gsap.to(mouse,{
+        //         left:(e.pageX - x/2)+"px",
+        //         top:(e.pageY - y/2)+"px"
+
+        //     })
+        // })
+
+    </script> 
+</body>
+</html>
